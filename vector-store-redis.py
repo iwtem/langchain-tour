@@ -12,7 +12,7 @@ redis_url = "redis://localhost:6379"
 
 redis_config = RedisConfig(redis_url=redis_url, index_name="fruits")
 
-vector_store = RedisVectorStore(embedding_model, redis_config=redis_config)
+vector_store = RedisVectorStore(embedding_model, config=redis_config)
 
 vector_store.add_texts(["apple is sweet", "banana is long", "orange", "strawberry", "grape", "watermelon"])
 
